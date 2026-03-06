@@ -28,12 +28,12 @@ Set the `OHOS_NDK_HOME` environment variable to point to the NDK's native direct
 
 **Windows (PowerShell):**
 ```powershell
-$env:OHOS_NDK_HOME = "\path\to\command-line-tools-windows\sdk\default\openharmony\native"
+$env:OHOS_NDK_HOME = "\path\to\commandline-tools-windows\sdk\default\openharmony\native"
 ```
 
 **Linux/macOS:**
 ```bash
-export OHOS_NDK_HOME="/path/to/command-line-tools/sdk/default/openharmony/native"
+export OHOS_NDK_HOME="/path/to/commandline-tools/sdk/default/openharmony/native"
 ```
 
 ## Building

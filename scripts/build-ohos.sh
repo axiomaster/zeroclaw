@@ -68,18 +68,18 @@ done
 
 # Determine NDK path based on OS
 if [[ -z "${OHOS_NDK_HOME}" ]]; then
-    if [[ -d "/mnt/d/tools/command-line-tools/sdk/default/openharmony/native" ]]; then
+    if [[ -d "/mnt/d/tools/commandline-tools/sdk/default/openharmony/native" ]]; then
         # WSL2 mounted Windows directory
-        OHOS_NDK_HOME="/mnt/d/tools/command-line-tools/sdk/default/openharmony/native"
+        OHOS_NDK_HOME="/mnt/d/tools/commandline-tools/sdk/default/openharmony/native"
     elif [[ -d "D:/tools/commandline-tools-windows/sdk/default/openharmony/native" ]]; then
         # Windows with forward slashes (Git Bash / MSYS2)
         OHOS_NDK_HOME="D:/tools/commandline-tools-windows/sdk/default/openharmony/native"
-    elif [[ -d "/opt/command-line-tools/sdk/default/openharmony/native" ]]; then
+    elif [[ -d "/opt/commandline-tools/sdk/default/openharmony/native" ]]; then
         # Linux default location
-        OHOS_NDK_HOME="/opt/command-line-tools/sdk/default/openharmony/native"
-    elif [[ -d "$HOME/command-line-tools/sdk/default/openharmony/native" ]]; then
+        OHOS_NDK_HOME="/opt/commandline-tools/sdk/default/openharmony/native"
+    elif [[ -d "$HOME/commandline-tools/sdk/default/openharmony/native" ]]; then
         # User home directory
-        OHOS_NDK_HOME="$HOME/command-line-tools/sdk/default/openharmony/native"
+        OHOS_NDK_HOME="$HOME/commandline-tools/sdk/default/openharmony/native"
     else
         echo "Error: OHOS_NDK_HOME not set and NDK not found in default locations."
         echo "Please set OHOS_NDK_HOME to point to the HarmonyOS NDK native directory."
